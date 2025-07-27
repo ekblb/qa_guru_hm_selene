@@ -15,7 +15,7 @@ def test_fill_form(set_browser):
 
     browser.element('label[for="hobbies-checkbox-3"]').should(be.visible).click()
 
-    browser.element('#uploadPicture').send_keys('/Users/ekblb/Documents/Python/qa_guru/qa_guru_hm_selene/picture.jpg')
+    browser.element('#uploadPicture').send_keys('/Users/ekblb/Documents/Python/qa_guru/qa_guru_hm_selene/tmp/picture.jpg')
 
     browser.element('#dateOfBirth-wrapper').click().element('.react-datepicker__month-select').send_keys('January')
     browser.element('.react-datepicker__year-select').send_keys('1997')
